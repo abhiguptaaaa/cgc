@@ -23,7 +23,7 @@
     const pleaseWaitText = document.querySelector(".pleaseWait-text");
     const manualDownloadText = document.querySelector(".manualDownload-text");
     const manualDownloadLink = document.querySelector(".manualDownload-link");
-    var timeLeft = 8;
+    var timeLeft = 5;
 
     downloadBtn.addEventListener("click", () => {
       downloadBtn.style.display = "none";
@@ -36,7 +36,7 @@
         if(timeLeft <= 0){
           clearInterval(downloadTimer);
           pleaseWaitText.style.display = "block";
-          let download_href = "";  https://drive.google.com/uc?export=download&id=11Sw0RQgSznmb9BgbRlgHqcNpExfsX0I2
+          let download_href = "https://drive.google.com/uc?export=download&id=11Sw0RQgSznmb9BgbRlgHqcNpExfsX0I2";  
           window.location.href = download_href;
           manualDownloadLink.href = download_href;
 
